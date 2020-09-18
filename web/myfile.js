@@ -34,8 +34,8 @@ app.get('/Salvarlogin', (req, res) => {
         fs.writeFileSync(filename, conteudo)
         console.log("Arquivo escrito com sucesso")
         const fileread=(fs.readFileSync(filename, 'utf-8'))
+        console.log("Arquivo lido com sucesso:")
         console.log(fileread)
-        console.log("Arquivo lido com sucesso")
     } catch (e) {
         console.error(e)
     }
